@@ -1,13 +1,13 @@
 ﻿# GASDocumentation
-My understanding of Unreal Engine 5's GameplayAbilitySystem plugin (GAS) with a simple multiplayer sample project. This is not official documentation and neither this project nor myself are affiliated with Epic Games. I make no guarantee for the accuracy of this information.
+我对虚幻引擎5的GameplayAbilitySystem插件（GAS）的理解，附带一个简单的多人游戏示例项目。本文并非官方文档，本项目及作者均与Epic Games无隶属关系。本文信息准确性不作任何保证。
 
-The goal of this documentation is to explain the major concepts and classes in GAS and provide some additional commentary based on my experience with it. There is a lot of 'tribal knowledge' of GAS among users in the community and I aim to share all of mine here.
+本文档的目标是解释GAS中的核心概念与类，并根据个人使用经验提供额外见解。社区中存在大量关于GAS的"部落知识"，我旨在分享所有个人积累的经验。
 
-The Sample Project and documentation are current with **Unreal Engine 5.3** (UE5). There are branches of this documentation for older versions of Unreal Engine, but they are no longer supported and are liable to have bugs or out of date information. Please use the branch that matches your engine version.
+示例项目与文档基于**虚幻引擎5.3**（UE5）版本。本文档存在针对旧版本引擎的分支，但这些分支已停止维护，可能存在错误或过时信息。请使用与您引擎版本匹配的分支。
 
-[GASShooter](https://github.com/tranek/GASShooter) is a sister Sample Project demonstrating advanced techniques with GAS for a multiplayer FPS/TPS.
+[GASShooter](https://github.com/tranek/GASShooter)是姊妹示例项目，展示了在多人FPS/TPS中使用GAS的进阶技巧。
 
-The best documentation will always be the plugin source code.
+最佳文档始终是插件源代码本身。
 
 <a name="table-of-contents"></a>
 ## Table of Contents
