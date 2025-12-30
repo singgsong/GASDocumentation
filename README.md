@@ -1,4 +1,4 @@
-﻿# GASDocumentation
+# GAS文档
 我对虚幻引擎5的GameplayAbilitySystem插件（GAS）的理解，附带一个简单的多人游戏示例项目。本文并非官方文档，本项目及作者均与Epic Games无隶属关系。本文信息准确性不作任何保证。
 
 本文档的目标是解释GAS中的核心概念与类，并根据个人使用经验提供额外见解。社区中存在大量关于GAS的"部落知识"，我旨在分享所有个人积累的经验。
@@ -10,10 +10,11 @@
 最佳文档始终是插件源代码本身。
 
 <a name="table-of-contents"></a>
+
 ## Table of Contents
 
-> 1. [Intro to the GameplayAbilitySystem Plugin](#intro)
-> 1. [Sample Project](#sp)
+> 1. [GameplayAbilitySystem 插件简介](#1-gameplayabilitysystem-插件简介)
+> 1. [示例项目](#sp)
 > 1. [Setting Up a Project Using GAS](#setup)
 > 1. [Concepts](#concepts)  
 >    4.1 [Ability System Component](#concepts-asc)  
