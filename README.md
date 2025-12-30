@@ -14,11 +14,11 @@
 ## Table of Contents
 
 > 1. [GameplayAbilitySystem 插件简介](#1-gameplayabilitysystem-插件简介)
-> 1. [示例项目](#sp)
-> 1. [Setting Up a Project Using GAS](#setup)
-> 1. [Concepts](#concepts)  
+> 2. [示例项目](#2-示例项目)
+> 3. [使用 GAS 搭建项目](#3-使用-gas-搭建项目)
+> 4. [GAS 概念](#4-gas-概念)  
 >    4.1 [Ability System Component](#concepts-asc)  
->    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1.1 [Replication Mode](#concepts-asc-rm)  
+>    	4.1.1 [Replication Mode](#concepts-asc-rm)  
 >    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1.2 [Setup and Initialization](#concepts-asc-setup)  
 >    4.2 [Gameplay Tags](#concepts-gt)  
 >    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.1 [Responding to Changes in Gameplay Tags](#concepts-gt-change)  
