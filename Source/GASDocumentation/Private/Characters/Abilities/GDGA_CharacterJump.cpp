@@ -4,13 +4,18 @@
 #include "Characters/Abilities/GDGA_CharacterJump.h"
 #include "Characters/GDCharacterBase.h"
 #include "GASDocumentation/GASDocumentation.h"
+#include "GameplayTagContainer.h"
 
 UGDGA_CharacterJump::UGDGA_CharacterJump()
 {
 	AbilityInputID = EGDAbilityInputID::Jump;
-	InstancingPolicy = EGameplayAbilityInstancingPolicy::NonInstanced;
-	AbilityTags.AddTag(FGameplayTag::RequestGameplayTag(FName("Ability.Jump")));
+	//InstancingPolicy = EGameplayAbilityInstancingPolicy::NonInstanced;
+	InstancingPolicy = EGameplayAbilityInstancingPolicy::Type::InstancedPerActor;
 
+	//AbilityTags.AddTag(FGameplayTag::RequestGameplayTag(FName("Ability.Jump")));
+	FGameplayTagContainer DefaultTags;
+	DefaultTags.AddTag(FGameplayTag::RequestGameplayTag(TEXT("Ability.Jump")));
+	SetAssetTags(DefaultTags);
 }
 
 void UGDGA_CharacterJump::ActivateAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo * ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo, const FGameplayEventData * TriggerEventData)

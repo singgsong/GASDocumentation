@@ -83,30 +83,14 @@ EGDHitReactDirection AGDCharacterBase::GetHitReactDirection(const FVector & Impa
 		// Determine if Front or Back
 
 		// Can see if it's left or right of Left/Right plane which would determine Front or Back
-		if (DistanceToRightLeftPlane >= 0)
-		{
-			return EGDHitReactDirection::Front;
-		}
-		else
-		{
-			return EGDHitReactDirection::Back;
-		}
+		return DistanceToRightLeftPlane >= 0 ? EGDHitReactDirection::Front : EGDHitReactDirection::Back;
 	}
-	else
-	{
+	else{
 		// Determine if Right or Left
-
-		if (DistanceToFrontBackPlane >= 0)
-		{
-			return EGDHitReactDirection::Right;
-		}
-		else
-		{
-			return EGDHitReactDirection::Left;
-		}
+		return DistanceToFrontBackPlane >= 0 ?  EGDHitReactDirection::Right : EGDHitReactDirection::Left;
 	}
 
-	return EGDHitReactDirection::Front;
+	//return EGDHitReactDirection::Front;
 }
 
 void AGDCharacterBase::PlayHitReact_Implementation(FGameplayTag HitDirection, AActor * DamageCauser)
